@@ -9,19 +9,29 @@
 
 ## Files
 
-### __init__.py
+### team/
 
-Builds the final teams and exports the factory methods.
+The main module which contains all your team’s code. Please use relative imports from inside the module.
 
-### demo_player.py
+### team/__init__.py
+
+Builds the final teams and exports the factory methods. When using the module on the command line, such as in
+
+    pelitagame ../path/to/module/team
+
+the method named `factory` is automatically called. Different methods can be specified with a colon
+
+    pelitagame ../path/to/module/team:other_factory
+
+### team/demo_player.py
 
 Contains the code for a simple `DrunkPlayer`.
 
-### utils/helper.py
+### team/utils/helper.py
 
 This could be a good place for global utility functions (but feel free to add more files for this, if needed)
 
-### utils/__init__.py
+### team/utils/__init__.py
 
 Needed to export the helper file.
 
