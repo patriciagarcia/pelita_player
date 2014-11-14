@@ -5,7 +5,7 @@ from pelita.player import TestPlayer
 
 from pelita.game_master import GameMaster
 
-from .. import DrunkPlayer
+from team import DrunkPlayer
 
 class MyPlayerTest(unittest.TestCase):
     def test_my_player_is_not_moving(self):
