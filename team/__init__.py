@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from pelita.player import SimpleTeam
-from .demo_player import DrunkPlayer
 from .hungry_player import HungryPlayer
+from .braindead_player import BraindeadPlayer
 # (please use relative imports inside your module)
 
 # The default factory method, which this module must export.
@@ -12,7 +12,7 @@ from .hungry_player import HungryPlayer
 # the first and second player.
 
 def factory():
-    return SimpleTeam("Drunk and hungry team", DrunkPlayer(), HungryPlayer())
+    return SimpleTeam("Brain deads", BraindeadPlayer(), BraindeadPlayer())
 
 # For testing purposes, one may use alternate factory methods::
 #
